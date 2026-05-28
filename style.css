@@ -1,0 +1,165 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Fundo branco conforme solicitado */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Container para alinhar o conteúdo e torná-lo responsivo */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4f7f4;
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 3px solid #1e4620;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #1e4620; /* Verde escuro */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    font-weight: 300;
+}
+
+/* Seções de texto */
+.introducao-conceito {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.introducao-conceito h2 {
+    color: #2e6f40;
+    margin-bottom: 15px;
+}
+
+/* Imagem Responsiva */
+.imagem-destaque {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Artigo Informativo */
+.conteudo-informativo {
+    margin: 40px 0;
+}
+
+.texto-bloco {
+    margin-bottom: 30px;
+}
+
+.texto-bloco h3 {
+    color: #1e4620;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    border-left: 4px solid #2e6f40;
+    padding-left: 10px;
+}
+
+/* Botão Interativo */
+.acao-interativa {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#btnMensagem {
+    background-color: #2e6f40;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+#btnMensagem:hover {
+    background-color: #1e4620;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensagem-estilizada {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2e6f40;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0f2a11; /* Verde bem escuro solicitado */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* Animação simples para o JS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- RESPONSIVIDADE (MEDIA QUERIES) --- */
+
+/* Ajustes para Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajustes para Celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .texto-bloco h3 {
+        font-size: 1.2rem;
+    }
+    
+    body {
+        font-size: 0.95rem;
+    }
+}
